@@ -1,0 +1,26 @@
+[MASTER]
+# Add the name of the directory containing the plugins to load
+# For example, plugin files should be stored in the plugins directory 
+# init-hook='import sys; sys.path.append(".")'
+
+[MESSAGES CONTROL]
+# Disable specific messages
+disable=no-value-for-parameter,
+        too-general-exception,
+        import-error
+
+[FORMAT]
+# Maximum number of characters on a single line
+max-line-length=100
+
+[BASIC]
+# Good variable names which should always be accepted
+good-names=i,j,k,ex,Run,_
+
+[REPORTS]
+# Tells whether to display a full report or only the messages
+reports=yes
+
+# Template used to display messages
+# This is a python-logging style format string
+msg-template={path}:{line}: [{msg_id}({symbol}), {obj}] {msg}
